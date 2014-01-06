@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
   Template.hello.greeting = function () {
-    return "Welcome to epoll.";
+    return "The Missing Meteor Tutorial!!!";
   };
 
   Template.hello.events({
