@@ -10,3 +10,7 @@ v 0.0.1
 - learn all the things from tutorial link above
 - creating new meteor project, meteor command, meteor file structure, mongodb command, handlebar templating, basic meteor security
 - new posting, view all posting, voting
+
+v 0.0.2
+- paging for result more than 5
+- find based on search text
