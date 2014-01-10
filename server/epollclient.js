@@ -15,3 +15,13 @@ Meteor.methods({
     return questionId;
   }
 });
+
+incrementYesVotes : function(questionId){
+    console.log(questionId);
+    Questions.update(questionId,{$inc : {'yes':1}});
+  },
+ 
+incrementNoVotes : function(questionId){
+    console.log(questionId);
+    Questions.update(questionId,{$inc : {'no':1}});
+}
