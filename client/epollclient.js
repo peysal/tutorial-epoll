@@ -9,3 +9,9 @@ Template.addquestion.events({
  
     }
 });
+
+/** I think its ok for the client to be able to fetch data from db here. Read only perhaps? */
+Questions = new Meteor.Collection("questions");
+Template.questions.items = function(){
+    return Questions.find({},{sort:{'submittedOn':-1}});
+};
